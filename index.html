@@ -1,0 +1,540 @@
+<!--Layout stolen from Arivand Rajeswaran: https://aravindr93.github.io/-->
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+    a {
+    color: #1772d0;
+    text-decoration:none;
+    }
+    a:focus, a:hover {
+    color: #f09228;
+    text-decoration:none;
+    }
+    /*font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
+    body,td,th,tr,p {
+    font-family: Helvetica;
+    font-size: 15px;
+    line-height: 1.4;
+    }
+    strong {
+    font-family: Helvetica;
+    font-size: 16px;
+    }
+    heading {
+    font-family: Helvetica;
+    font-size: 22px;
+    }
+    heading2 {
+    font-family: Helvetica;
+    font-size: 16px;
+    }
+    papertitle {
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 700
+    }
+    name {
+    font-family: Helvetica;
+    font-size: 32px;
+    }
+/*    li:not(:last-child) {
+        margin-bottom: 5px;
+    }
+    .one
+    {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    }
+    .two
+    {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    }
+    .fade {
+     transition: opacity .2s ease-in-out;
+     -moz-transition: opacity .2s ease-in-out;
+     -webkit-transition: opacity .2s ease-in-out;
+    }
+    span.highlight {
+        background-color: #ffffd0;
+    }*/
+
+img{
+    display: block;
+    margin: 0 auto;
+    height: auto;
+}
+
+  </style>
+
+  <link href="./_files/css" rel="stylesheet" type="text/css">
+
+<!--
+<style id="dark-reader-style" type="text/css">@media screen {
+
+/* Leading rule */
+html {
+  -webkit-filter: brightness(110%) contrast(90%) grayscale(20%) sepia(10%) !important;
+}
+
+/* Text contrast */
+html {
+  text-shadow: 0 0 0 !important;
+}
+
+/* Full screen */
+*:-webkit-full-screen, *:-webkit-full-screen * {
+  -webkit-filter: none !important;
+}
+
+/* Page background */
+html {
+  background: rgb(255,255,255) !important;
+}
+
+}</style>
+-->
+
+<script type="text/javascript">
+   function visibility_on(id) {
+        var e = document.getElementById(id+"_text");
+        if(e.style.display == 'none')
+            e.style.display = 'block';
+        var e = document.getElementById(id+"_img");
+        if(e.style.display == 'none')
+            e.style.display = 'block';
+   }
+   function visibility_off(id) {
+        var e = document.getElementById(id+"_text");
+        if(e.style.display == 'block')
+            e.style.display = 'none';
+        var e = document.getElementById(id+"_img");
+        if(e.style.display == 'block')
+            e.style.display = 'none';
+   }
+   function toggle_visibility(id) {
+       var e = document.getElementById(id+"_text");
+       if(e.style.display == 'inline')
+          e.style.display = 'block';
+       else
+          e.style.display = 'inline';
+       var e = document.getElementById(id+"_img");
+       if(e.style.display == 'inline')
+          e.style.display = 'block';
+       else
+          e.style.display = 'inline';
+   }
+   function toggle_vis(id) {
+       var e = document.getElementById(id);
+       if (e.style.display == 'none')
+           e.style.display = 'inline';
+       else
+           e.style.display = 'none';
+   }
+</script>
+
+<head>
+  <title>Stephen McAleer</title>
+  <base target="_blank">
+  <!-- <body bgcolor=#f2f2f2> -->
+  <!-- <body bgcolor=#F5F3EE> -->
+  <!-- <body bgcolor=#ffffff> -->
+  <style>
+  #Highlight1 {
+      background-color: #EAF2F8;
+    }
+  </style>
+  <style>
+  #Highlight2 {
+      background-color: #FEF5E7;
+    }
+  </style>
+</head>
+
+<body>
+  <table width=820 align=center cellspacing="20">
+  <tr>
+    <td width="30%">
+      <img src="assets/profile_picture.jpg" width="55%" style="border-radius:20px" >
+    </td>
+    <td width="50%" >
+      <p align="left">
+        <p> <name>Stephen McAleer</name> <br> </p>
+        <heading2> Postdoc at Carnegie Mellon University </a> </heading2> <br>
+      </p>
+      <p align="left">
+          <heading2> <b>Contact:</b> &nbsp smcaleer@cs.cmu.edu </heading2><br>
+          <a href="https://scholar.google.com/citations?hl=en&user=iEFL4-YAAAAJ&view_op=list_works&sortby=pubdate"> <heading2> Google Scholar </heading2></a>  |  <a href="assets/cv.pdf"> <heading2> CV </heading2></a>  |  <a href="https://twitter.com/mcaleerstephen"> <heading2> Twitter </heading2></a>
+      </p>
+    </td>
+  </tr>
+
+  </table>
+
+  <table width=840 align="center" >
+    <tr><td colspan="2">
+    <hr>
+    <div align="left">
+      <p align="left">
+<!--          I am a postdoc at CMU working on <b>game-theoretic reinforcement learning</b> with <a href="http://www.cs.cmu.edu/~sandholm/">Tuomas Sandholm</a>.-->
+<!--      </p>-->
+      <p>
+        I am broadly interested in algorithms for robust sequential decision-making. My long-term goal is to develop an agent that can accomplish any task that a human can perform on a computer.
+<!--        Recently I have become interested in LLMs for decision-making.-->
+
+<!--          My work studies how reinforcement learning (RL) can be used to scale up algorithms from computational game theory as well as how computational game theory can improve single-agent RL.-->
+<!--          I am interested in algorithms that make optimal decisions in the presence of other decision makers.-->
+<!--          In particular, I work on developing <i>scalable</i> algorithms that have <i>game-theoretical</i> guarantees.-->
+
+<!--        Some topics that I am interested in include:-->
+<!--        <ul>-->
+<!--          <li>RL for game theory</li>-->
+<!--          <ul>-->
+<!--          <li>RL for two-player zero-sum games</li>-->
+<!--          <li>Algorithms for mediators in general-sum games</li>-->
+<!--          <li>Cooperative RL</li>-->
+<!--          </ul>-->
+<!--          <li>Game theory for RL</li>-->
+<!--            <ul>-->
+<!--              <li>Generalization in RL</li>-->
+<!--              <li>Robust RL</li>-->
+<!--                <li>Imitation learning</li>-->
+<!--            </ul>-->
+<!--        </ul>-->
+<!--          : <i>How should agents make decisions in the presence of other decision makers?</i>-->
+          </p>
+<!--        <p>-->
+<!--            By answering this question I believe that we can increase productivity, for example via optimized markets and automation algorithms, and scientific understanding of life and intelligence.-->
+<!--            Some research directions I am working on include:-->
+<!--            <ul>-->
+<!--              <li>Scalable algorithms for finding equilibria in large games</li>-->
+<!--              <li>Tea</li>-->
+<!--              <li>Milk</li>-->
+<!--            </ul>-->
+
+<!--        </p>-->
+        <p>
+<!--        I work on algorithmic foundations of <b>deep learning</b> and <b>reinforcement learning.</b> My current research focuses on <span style="background-color: #F9E79F">pretraining and foundation models for decision making</span> and Embodied Intelligence. Relevent topics include self-supervised representation learning, sequence models for decision making, and offline RL.-->
+      </p>
+      <p>
+        I am currently a postdoc at CMU working with <a href="http://www.cs.cmu.edu/~sandholm/">Tuomas Sandholm</a>. I received my PhD in computer science from the University of California, Irvine working with <a href="https://www.igb.uci.edu/~pfbaldi/">Pierre Baldi</a>. During my PhD, I did research scientist internships at Intel Labs and DeepMind. Before that, I received my bachelor's degree in mathematics and economics from Arizona State University in 2017.
+<!--          My Erdos number is 3 and my last name is pronounced MAC-a-leer.-->
+
+      </p>
+
+<!--        <p>-->
+<!--            Please reach out if you are interested in talking!-->
+<!--        </p>-->
+    </div></tr>
+    <tr>
+      <td colspan="2">
+    <hr>
+  </table>
+
+
+  <table width=820 align="center" >
+  <tr><td colspan="2">
+
+  <p><b><font size=+1> Representative Papers </font></b>
+
+<!--  <section id="Highlight1">-->
+<!--  <p>-->
+<!--    <b><font> <u> Multi-Agent Reinforcement Learning</u> </b> </font> <br />-->
+<!--  </p>-->
+
+<!--  <p><b>ESCHER: Eschewing Importance Sampling in Games by Computing a History Value Function to Estimate Regret</b> <br />-->
+<!--  <font color=#a40000>Stephen McAleer</font>, Gabriele Farina, Marc Lanctot, Tuomas Sandholm<br />-->
+<!--      International Conference on Learning Representations (ICLR) 2023 <br />-->
+<!--  <a href="https://arxiv.org/abs/2206.04122">Paper</a> | <a href="https://github.com/Sandholm-Lab/ESCHER">Code</a>-->
+<!--  </p>-->
+
+<!--  <p><b>Mastering the Game of Stratego With Model-Free Multiagent Reinforcement Learning</b> <br />-->
+<!--  Julien Perolat*, Bart de Vylder*, Daniel Hennes, Eugene Tarassov, Florian Strub, Vincent de Boer, Paul Muller, Jerome T Connor, Neil Burch, Thomas Anthony, <font color=#a40000>Stephen McAleer</font>, Romuald Elie, Sarah H Cen, Zhe Wang, Audrunas Gruslys, Aleksandra Malysheva, Mina Khan, Sherjil Ozair, Finbarr Timbers, Toby Pohlen, Tom Eccles, Mark Rowland, Marc Lanctot, Jean-Baptiste Lespiau, Bilal Piot, Shayegan Omidshafiei, Edward Lockhart, Laurent Sifre, Nathalie Beauguerlange, Remi Munos, David Silver, Satinder Singh, Demis Hassabis, Karl Tuyls* <br />-->
+<!--                Science 2022 <br />-->
+<!--      <a href="https://www.science.org/doi/10.1126/science.add4679">Paper</a>-->
+<!--  </p>-->
+
+<!--&lt;!&ndash;  <p><b>Independent Natural Policy Gradient Always Converges in Markov Potential Games</b> <br />&ndash;&gt;-->
+<!--&lt;!&ndash;  Roy Fox, <font color=#a40000>Stephen McAleer</font>, Will Overman, Ioannis Panageas<br />&ndash;&gt;-->
+<!--&lt;!&ndash;  International Conference on Artificial Intelligence and Statistics (AISTATS) 2022 <br />&ndash;&gt;-->
+<!--&lt;!&ndash;  <a href="https://proceedings.mlr.press/v151/fox22a.html">Paper</a>&ndash;&gt;-->
+<!--&lt;!&ndash;  </p>&ndash;&gt;-->
+
+<!--  <p><b>XDO: A Double Oracle Algorithm for Extensive-Form Games</b> <br />-->
+<!--  <font color=#a40000>Stephen McAleer</font>, John Lanier, Kevin A Wang, Pierre Baldi, Roy Fox<br />-->
+<!--  Conference on Neural Information Processing Systems (NeurIPS) 2021 <br />-->
+<!--  <a href="https://proceedings.neurips.cc/paper/2021/hash/c2e06e9a80370952f6ec5463c77cbace-Abstract.html">Paper</a> | <a href="https://github.com/indylab/nxdo">Code</a>-->
+<!--  </p>-->
+
+<!--  <p><b>Neural Auto-Curricula in Two-Player Zero-Sum Games</b> <br />-->
+<!--  Xidong Feng, Oliver Slumbers, Ziyu Wan, Bo Liu, <font color=#a40000>Stephen McAleer</font>, Ying Wen, Jun Wang, Yaodong Yang<br />-->
+<!--  Conference on Neural Information Processing Systems (NeurIPS) 2021 <br />-->
+<!--  <a href="https://proceedings.neurips.cc/paper/2021/hash/1cd73be1e256a7405516501e94e892ac-Abstract.html">Paper</a>-->
+<!--  </p>-->
+
+<!--      <p><b>Pipeline PSRO: A Scalable Approach for Finding Approximate Nash Equilibria in Large Games</b> <br />-->
+<!--  <font color=#a40000>Stephen McAleer*</font>, John Lanier*, Roy Fox, Pierre Baldi<br />-->
+<!--  Conference on Neural Information Processing Systems (NeurIPS) 2020 <br />-->
+<!--  <a href="https://proceedings.neurips.cc/paper/2020/hash/e9bcd1b063077573285ae1a41025f5dc-Abstract.html">Paper</a> | <a href="https://github.com/indylab/nxdo">Code</a>-->
+<!--  </p>-->
+
+<!--      <p><b>Evolutionary Reinforcement Learning for Sample-Efficient Multiagent Coordination</b> <br />-->
+<!--  Somdeb Majumdar, Shauharda Khadka, Santiago Miret, Stephen McAleer, <font color=#a40000>Stephen McAleer</font>, Kagan Tumer<br />-->
+<!--  International Conference on Machine Learning (ICML) 2020<br />-->
+<!--  <a href="http://proceedings.mlr.press/v119/majumdar20a.html">Paper</a>-->
+<!--  </p>-->
+
+<!--  </section>-->
+
+<!--  <section id="Highlight2">-->
+
+<!--  <p>-->
+<!--    <b><font> <u> Single-Agent Reinforcement Learning </u> </b> </font> <br />-->
+<!--  </p>-->
+
+<!--  <p><b>Reducing Variance in Temporal-Difference Value Estimation via Ensemble of Deep Networks</b> <br />-->
+<!--  Litian Liang, Yaosheng Xu, <font color=#a40000>Stephen McAleer</font>, Dailin Hu, Alexander Ihler, Pieter Abbeel, Roy Fox<br />-->
+<!--  International Conference on Machine Learning (ICML) 2022<br />-->
+<!--      <a href="https://proceedings.mlr.press/v162/liang22c.html">Paper</a>-->
+
+<!--        <p><b>Proving Theorems Using Incremental Learning and Hindsight Experience Replay</b> <br />-->
+<!--  Eser Aygün, Ankit Anand, Laurent Orseau, Xavier Glorot, <font color=#a40000>Stephen McAleer</font>, Vlad Firoiu, Lei M Zhang, Doina Precup, Shibl Mourad<br />-->
+<!--  International Conference on Machine Learning (ICML) 2022<br />-->
+<!--      <a href="https://proceedings.mlr.press/v162/aygun22a.html">Paper</a>-->
+
+<!--        <p><b>Solving the Rubik's Cube With Deep Reinforcement Learning and Search</b> <br />-->
+<!--  Forest Agostinelli*, <font color=#a40000>Stephen McAleer*</font>, Alexander Shmakov*, Pierre Baldi <br />-->
+<!--  Nature Machine Intelligence 2019<br />-->
+<!--      <a href="https://cse.sc.edu/~foresta/assets/files/SolvingTheRubiksCubeWithDeepReinforcementLearningAndSearch_Final.pdf">Paper</a></p>-->
+
+<!--  <p><b>Solving the Rubik's Cube With Approximate Policy Iteration</b> <br />-->
+<!--  <font color=#a40000>Stephen McAleer*</font>, Forest Agostinelli*, Alexander Shmakov*, Pierre Baldi <br />-->
+<!--  International Conference on Learning Representations (ICLR) 2018<br />-->
+<!--      <a href="https://openreview.net/forum?id=Hyfn2jCcKm">Paper</a></p>-->
+
+<!--  </section>-->
+
+
+        <section id="Highlight1">
+<!--  <p>-->
+<!--    <b><font> <u> Multi-Agent Reinforcement Learning</u> </b> </font> <br />-->
+<!--  </p>-->
+
+  <p><b>Language Models can Solve Computer Tasks</b> <br />
+  Geunwoo Kim, Pierre Baldi, <font color=#a40000>Stephen McAleer</font><br />
+      ArXiv 2023 <br />
+  <a href="https://arxiv.org/abs/2303.17491">Paper</a> | <a href="https://github.com/posgnu/rci-agent">Code</a>
+  </p>
+
+
+  <p><b>ESCHER: Eschewing Importance Sampling in Games by Computing a History Value Function to Estimate Regret</b> <br />
+  <font color=#a40000>Stephen McAleer</font>, Gabriele Farina, Marc Lanctot, Tuomas Sandholm<br />
+      International Conference on Learning Representations (ICLR) 2023 <br />
+  <a href="https://arxiv.org/abs/2206.04122">Paper</a> | <a href="https://github.com/Sandholm-Lab/ESCHER">Code</a>
+  </p>
+
+  <p><b>Mastering the Game of Stratego With Model-Free Multiagent Reinforcement Learning</b> <br />
+  Julien Perolat*, Bart de Vylder*, Daniel Hennes, Eugene Tarassov, Florian Strub, Vincent de Boer, Paul Muller, Jerome T Connor, Neil Burch, Thomas Anthony, <font color=#a40000>Stephen McAleer</font>, Romuald Elie, Sarah H Cen, Zhe Wang, Audrunas Gruslys, Aleksandra Malysheva, Mina Khan, Sherjil Ozair, Finbarr Timbers, Toby Pohlen, Tom Eccles, Mark Rowland, Marc Lanctot, Jean-Baptiste Lespiau, Bilal Piot, Shayegan Omidshafiei, Edward Lockhart, Laurent Sifre, Nathalie Beauguerlange, Remi Munos, David Silver, Satinder Singh, Demis Hassabis, Karl Tuyls* <br />
+                Science 2022 <br />
+      <a href="https://www.science.org/doi/10.1126/science.add4679">Paper</a>
+  </p>
+
+<!--  <p><b>Independent Natural Policy Gradient Always Converges in Markov Potential Games</b> <br />-->
+<!--  Roy Fox, <font color=#a40000>Stephen McAleer</font>, Will Overman, Ioannis Panageas<br />-->
+<!--  International Conference on Artificial Intelligence and Statistics (AISTATS) 2022 <br />-->
+<!--  <a href="https://proceedings.mlr.press/v151/fox22a.html">Paper</a>-->
+<!--  </p>-->
+
+  <p><b>XDO: A Double Oracle Algorithm for Extensive-Form Games</b> <br />
+  <font color=#a40000>Stephen McAleer</font>, John Lanier, Kevin A Wang, Pierre Baldi, Roy Fox<br />
+  Conference on Neural Information Processing Systems (NeurIPS) 2021 <br />
+  <a href="https://proceedings.neurips.cc/paper/2021/hash/c2e06e9a80370952f6ec5463c77cbace-Abstract.html">Paper</a> | <a href="https://github.com/indylab/nxdo">Code</a>
+  </p>
+
+<!--  <p><b>Neural Auto-Curricula in Two-Player Zero-Sum Games</b> <br />-->
+<!--  Xidong Feng, Oliver Slumbers, Ziyu Wan, Bo Liu, <font color=#a40000>Stephen McAleer</font>, Ying Wen, Jun Wang, Yaodong Yang<br />-->
+<!--  Conference on Neural Information Processing Systems (NeurIPS) 2021 <br />-->
+<!--  <a href="https://proceedings.neurips.cc/paper/2021/hash/1cd73be1e256a7405516501e94e892ac-Abstract.html">Paper</a>-->
+<!--  </p>-->
+
+      <p><b>Pipeline PSRO: A Scalable Approach for Finding Approximate Nash Equilibria in Large Games</b> <br />
+  <font color=#a40000>Stephen McAleer*</font>, John Lanier*, Roy Fox, Pierre Baldi<br />
+  Conference on Neural Information Processing Systems (NeurIPS) 2020 <br />
+  <a href="https://proceedings.neurips.cc/paper/2020/hash/e9bcd1b063077573285ae1a41025f5dc-Abstract.html">Paper</a> | <a href="https://github.com/indylab/nxdo">Code</a>
+  </p>
+
+<!--      <p><b>Evolutionary Reinforcement Learning for Sample-Efficient Multiagent Coordination</b> <br />-->
+<!--  Somdeb Majumdar, Shauharda Khadka, Santiago Miret, Stephen McAleer, <font color=#a40000>Stephen McAleer</font>, Kagan Tumer<br />-->
+<!--  International Conference on Machine Learning (ICML) 2020<br />-->
+<!--  <a href="http://proceedings.mlr.press/v119/majumdar20a.html">Paper</a>-->
+<!--  </p>-->
+
+<!--  </section>-->
+
+<!--  <section id="Highlight2">-->
+
+<!--  <p>-->
+<!--    <b><font> <u> Single-Agent Reinforcement Learning </u> </b> </font> <br />-->
+<!--  </p>-->
+
+<!--  <p><b>Reducing Variance in Temporal-Difference Value Estimation via Ensemble of Deep Networks</b> <br />-->
+<!--  Litian Liang, Yaosheng Xu, <font color=#a40000>Stephen McAleer</font>, Dailin Hu, Alexander Ihler, Pieter Abbeel, Roy Fox<br />-->
+<!--  International Conference on Machine Learning (ICML) 2022<br />-->
+<!--      <a href="https://proceedings.mlr.press/v162/liang22c.html">Paper</a>-->
+
+<!--        <p><b>Proving Theorems Using Incremental Learning and Hindsight Experience Replay</b> <br />-->
+<!--  Eser Aygün, Ankit Anand, Laurent Orseau, Xavier Glorot, <font color=#a40000>Stephen McAleer</font>, Vlad Firoiu, Lei M Zhang, Doina Precup, Shibl Mourad<br />-->
+<!--  International Conference on Machine Learning (ICML) 2022<br />-->
+<!--      <a href="https://proceedings.mlr.press/v162/aygun22a.html">Paper</a>-->
+
+<!--        <p><b>Solving the Rubik's Cube With Deep Reinforcement Learning and Search</b> <br />-->
+<!--  Forest Agostinelli*, <font color=#a40000>Stephen McAleer*</font>, Alexander Shmakov*, Pierre Baldi <br />-->
+<!--  Nature Machine Intelligence 2019<br />-->
+<!--      <a href="https://cse.sc.edu/~foresta/assets/files/SolvingTheRubiksCubeWithDeepReinforcementLearningAndSearch_Final.pdf">Paper</a></p>-->
+
+  <p><b>Solving the Rubik's Cube With Approximate Policy Iteration</b> <br />
+  <font color=#a40000>Stephen McAleer*</font>, Forest Agostinelli*, Alexander Shmakov*, Pierre Baldi <br />
+  International Conference on Learning Representations (ICLR) 2018<br />
+      <a href="https://openreview.net/forum?id=Hyfn2jCcKm">Paper</a></p>
+
+  </section>
+
+
+  </tr>
+  <tr>
+    <td colspan="2">
+  <hr>
+  </table>
+
+
+   <table width=800 align="center" >
+  <tr><td colspan="2">
+
+<!--  <p><b><font size=+1> Mentoring </font></b>-->
+<!--  <p align="justify">-->
+<!--    I enjoy collaborating with a diverse set of students and researchers. I have had the pleasure of mentoring some highly motivated students at both the undergraduate and PhD levels.-->
+<!--    List of <span style="background-color: #EAF2F8">current students</span> and <span style="background-color: #FEF5E7">alumni.</span> </p>-->
+<!--    &lt;!&ndash; List of <span style="background-color: #F9E79F">current students</span> and <span style="background-color: #D5F5E3">alumni.</span> </p> &ndash;&gt;-->
+
+<!--  </td></tr>-->
+<!--  <tr>-->
+<!--    <td rowspan="1" width="45%">-->
+<!--      <ul>-->
+<!--        <font size=+0.5> <u><b>FAIR Interns and Residents</b></u> </font>-->
+<!--        <section id="Highlight1">-->
+<!--          <li> <a href="https://wuphilipp.github.io/">Philipp Wu</a> (PhD at Berkeley) </li>-->
+<!--          <li> <a href="https://www.cs.cmu.edu/~sbahl2/">Shikhar Bahl</a> (PhD at CMU) </li>-->
+<!--          <li> <a href="https://nicklashansen.github.io/">Nicklas Hansen</a> (PhD at UC San Diego) </li>-->
+<!--          <li> <a href="https://mandizhao.github.io/">Mandi Zhao</a> (PhD at Columbia University) </li>-->
+<!--        </section>-->
+<!--        <section id="Highlight2">-->
+<!--          <li> <a href="https://bland.website/">Allan Zhou</a> (PhD at Stanford) </li>-->
+<!--          <li> <a href="https://cs.stanford.edu/~surajn/">Suraj Nair</a> (PhD at Stanford) </li>-->
+<!--          <li> <a href="https://kelym.github.io/">Liyiming Ke</a> (PhD at UW Seattle) </li>-->
+<!--          <li> <a href="https://homes.cs.washington.edu/~khzeng/">Kuo-Hao Zeng</a> (PhD at UW Seattle) </li>-->
+<!--          <li> <a href="https://andipeng.com/">Andi Peng</a> (PhD at MIT) </li>-->
+<!--          <li> <a href="https://www.cs.utexas.edu/~yuchen93/">Yuchen Cui</a> (PhD at UT Austin) </li>-->
+<!--          <li> <a href="http://tanmayshankar.weebly.com/">Tanmay Shankar</a> (PhD at CMU) </li>-->
+<!--        </section>-->
+<!--      </ul>-->
+<!--    </td>-->
+<!--    <td rowspan="1" width="45%">-->
+<!--      <ul>-->
+<!--        <font size=+0.5> <u><b>University Students</b></u> </font>-->
+<!--        <section id="Highlight1">-->
+<!--          <li> <a href="https://twitter.com/rmrafailov">Rafael Rafailov</a> (Stanford, MS)-->
+<!--          <li> <a href="">Aryan Jain</a> (UC Berkeley, BS) </li>-->
+<!--          <li> <a href="">Ethan Guo</a> (UC Berkeley, BS) </li>-->
+<!--        </section>-->
+<!--        <section id="Highlight2">-->
+<!--          <li> <a href="https://kzl.github.io/">Kevin Lu</a> (UC Berkeley, BS ==> FAIR AI resident) </li>-->
+<!--          <li> <a href="https://www.linkedin.com/in/bnevans/">Ben Evans</a> (UW, BS/MS ==> PhD at NYU) </li>-->
+<!--          <li> <a href="https://www.linkedin.com/in/sarvjeet-singh-ghotra-1a145898/">Sarvjeet Ghotra</a> (IITM Intern ==> PhD at MILA) </li>-->
+<!--          <li> <a href="https://colinxsummers.com/">Colin Summers</a> (UW, BS/MS ==> UW PhD)-->
+<!--          <li> <a href="https://www.linkedin.com/in/catherinecang//">Catherine Cang</a> (UC Berkeley, BS ==> SWE at <a href="https://plaid.com/">Plaid</a>) </li>-->
+<!--          <li> <a href="https://www.linkedin.com/in/dpjain/">Divye P. Jain</a> (UW, BS/MS ==> Google MTV)-->
+<!--        </section>-->
+<!--      </ul>-->
+<!--    </td>-->
+
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td colspan="2">-->
+<!--  <hr>-->
+<!--  </table>-->
+
+
+
+<!--  <table width=820 align="center" >-->
+<!--  <tr><td colspan="2">-->
+
+<!--  <p><b><font size=+1> All Publications and Preprints </font></b>-->
+
+<!--  <p align="left"> See <a href="assets/all_papers.html"> this publication page</a> or <a href="https://scholar.google.com/citations?user=_EJrRVAAAAAJ&hl=en"> google scholar.</a> </p>-->
+
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td colspan="2">-->
+<!--  <hr>-->
+<!--  </table>-->
+
+
+<!--  <table width=820 align="center" >-->
+<!--  <tr><td colspan="2">-->
+
+  <p><b><font size=+1>Selected Press</font></b>
+      <p align="justify">
+    <a href="https://www.popsci.com/technology/ai-stratego//"><b>Popular Science:</b> Here's how a new AI mastered the tricky game of Stratego.
+</a> <br />
+ </p>
+
+      <p align="justify">
+    <a href="https://techcrunch.com/2022/12/01/now-ai-can-outmaneuver-you-at-both-stratego-and-diplomacy/"><b>TechCrunch:</b> Now AI can outmaneuver you at both Stratego and Diplomacy.
+</a> <br />
+ </p>
+
+  <p align="justify">
+    <a href="https://gizmodo.com/ai-deep-mind-stratego-1849842361"><b>Gizmodo:</b> DeepMind's New AI Uses Game Theory to Trounce Humans in 'Stratego'.
+</a> <br />
+ </p>
+
+
+  <p align="justify">
+    <a href="https://www.technologyreview.com/2018/06/15/142301/a-machine-has-figured-out-rubiks-cube-all-by-itself/"><b>MIT Technology Review:</b> A machine has figured out Rubik's Cube all by itself.
+</a> <br />
+ </p>
+
+  <p align="justify">
+    <a href="https://www.washingtonpost.com/technology/2019/07/16/how-quickly-can-ai-solve-rubiks-cube-less-time-than-it-took-you-read-this-headline/"><b>Washington Post:</b> How quickly can AI solve a Rubik's Cube? In less time than it took you to
+read this headline.
+</a> <br />
+ </p>
+
+  <p align="justify">
+    <a href="https://www.latimes.com/local/lanow/la-me-ln-rubiks-cube-20180623-story.html/"><b>LA Times:</b> A machine taught itself to solve Rubik's Cube without human help, UC
+Irvine researchers say.
+</a> <br />
+ </p>
+
+  <p align="justify">
+    <a href="https://www.bbc.com/news/technology-49003996/"><b>BBC:</b> AI Solves Rubik's Cube in One Second.
+</a> <br />
+ </p>
+
+  </tr>
+  <tr>
+    <td colspan="2">
+  <hr>
+  </table>
+  </tr>
+
+</body></html>
+
+
